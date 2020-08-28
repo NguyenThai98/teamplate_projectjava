@@ -1,0 +1,294 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+
+:root{
+    --colorRed: red;
+    --font:'Roboto', sans-serif;
+    --mau1:#cad2c5;
+    --mau2:#84a98c;
+    --mau3:#52796f;
+    --mau4:#354f52;
+    --mau5:#2f3e46;
+    --font14px: 14px;
+    --font24px:24px;
+    --font16px:16px;
+}
+
+/* css genaral */
+body{
+    font-size: var(--font14px);
+    font-family: var(--font);
+}
+a{
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+/* css genaral xxxxx*/
+
+/* css header */
+#header{
+    padding: 20px 0;
+}
+.header_logo-name{
+    color: var(--colorRed);
+}
+.frmSearch{
+
+position: relative;
+}
+.frmSearch > input {
+    position: absolute;
+    width: 50%;
+    border: 0;
+    border-bottom: 1px solid var(--mau2);
+    outline: none;
+    color: var(--mau2);
+    padding: 5px;
+}
+.frmSearch > i{
+    
+position: absolute;
+cursor: pointer;  
+top: 4px;
+    
+right: 257px;
+    
+color: var(--mau2);
+    
+font-size: 22px;
+    
+background: white;
+width: 47px; 
+height: 26px;
+    
+text-align: center;
+    
+border-radius: 50px;
+    
+line-height: 25px;
+}
+.header_logo-name a {
+    font-size: var(--font24px);
+    color: var(--mau4);
+    text-decoration: none;
+    font-weight: 800;
+}
+.shopping_cart_box {
+    width: 100%;
+    line-height: 36px;
+}
+[class*="shopping_cart_box_btn"] > a{
+    color: var(--mau4);
+    text-decoration: none;
+    font-size: var(--font16px);
+    font-weight: bold;
+}
+[class*="shopping_cart_box_btn"] > a > i{
+    font-size: var(--font16px);
+}
+[class*="shopping_cart_box_btn"] {
+    background: var(--mau1);
+    text-align: center;
+    border-radius: 20px;
+}
+/* css header xxx*/
+
+/* css menu */
+.menu{
+    box-shadow: 0 2px 4px 0 rgba(182,182,182,0.5);
+}
+.menu_left,.menu_right{
+    font-size: 0;
+    margin-bottom: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 32px;
+}
+.menu_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu_left > li > a{
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    font-size: var(--font14px);
+    transition: 0.4s;
+    padding: 2px;
+    border-radius: 5px;
+}
+.menu_left > li > a > i ,.menu_right_msg > i,.menu_right_setting >i{
+    font-size: var(--font16px);
+    background: #e5e6ec;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+}
+.menu_left > li,.menu_right > div{
+    display: inline-block;
+    font-size: var(--font16px);
+    width: 14%;
+    vertical-align: middle;
+    color: var(--mau4);
+    text-align: center;
+    
+}
+ 
+.menu_right > div {
+    width: 22%;
+    text-align: center;
+}
+.menu_left > li > a:hover{
+    background: #ebf1fd;
+}
+.menu{
+    padding: 10px 0;
+}
+.menu_left > li{
+    position: relative;
+}
+.menu_left-sub {
+    position: absolute;
+    width: 100%;
+    top: 170%;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.menu_left-sub li {
+    background: var(--mau1);
+    padding: 5px 0;
+    margin-bottom: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(182,182,182,0.5);
+    cursor: pointer;
+}
+.menu_left-sub li > a{
+    color: var(--mau4);
+
+}
+.menu_left > li:hover > .menu_left-sub{
+    top:100% ;
+    opacity: 1;
+    visibility: visible;
+}
+ 
+.menu_left-sub li > a{
+    text-decoration: none;
+    font-size: var(--font14px);
+    color: var(--mau5);
+    font-weight: 500;
+}
+.menu_right_login > b{
+    cursor: pointer;
+}
+/* css menu xxx*/
+ 
+/* css form login */
+.form_login {
+    width: 670px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background: var(--mau1);
+    overflow: hidden;
+}
+.title_form{
+    background: url('../images/bg-01.jpg');
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.title_form::after{
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #354f52cc;
+}
+.form_login > form{
+    text-align: center;
+}
+.input_form{
+    display: flex;
+    justify-content: center;
+}
+.input_form > input{
+    float: left;
+    width: 35%;
+}
+.input_form > input{
+    
+border: none;
+    
+background: transparent;
+    
+outline: none;
+    
+border-bottom: 1px solid var(--mau4);
+    
+color: var(--mau4);
+    
+margin-bottom: 15px;
+    
+font-size: var(--font14px);
+    
+font-weight: 500;
+    
+padding: 7px;
+}
+ 
+.input_form  i {
+    position: absolute;
+    right: 30%;
+    color: var(--mau4);
+    cursor: pointer;
+    top: 72%;
+    left: 62%;
+}
+.form_login form > h3{
+    color: white;
+}
+.input_check {
+    font-size: 0;
+    display: inline-block;
+}
+.input_check > input{
+    margin-right: 4px;
+}
+.title_form > h3{
+    padding: 73px;
+    color: var(--mau1);
+    position: relative;
+    z-index: 2;
+}
+.input_check > input,.input_check > label{
+    font-size: var(--font14px);
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+.input_check > label{
+    color:var(--mau4);
+    font-size: var(--font16px);
+}
+/* css form login xxx*/
