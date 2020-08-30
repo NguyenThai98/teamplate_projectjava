@@ -101,32 +101,47 @@
             </div>
         </div>
     </menu>
-    <div class="form_login">
-        <div class="title_form">
-            <h3>SIGNUP</h3>
+    <div class="main_form">
+        <div class="form_login">
+            <div class="title_form">
+                <h3>OPEN4UM</h3>
+            </div>
+            <div class="login_social-network">
+                <h3>SIGN IN WITH</h3>
+                <a href="#" class="fblogin"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</a>
+                <a href="#" class="gglogin"><i class="fa fa-google" aria-hidden="true"></i>Google</a>
+            </div>
+            <form action="#" method="post">
+
+                <div class="input_form">
+                    <input type="text" placeholder="Enter username" id="username" name="username">
+                </div>
+                <div class="input_form">
+                    <input type="password" placeholder="Enter password" id="password" name="password">
+
+                    <i class="fa fa-eye-slash hiddeneye" aria-hidden="true"></i>
+
+                    <i class="fa fa-eye showeye" aria-hidden="true"></i>
+                </div>
+
+                <div class="handl_pw">
+                    <div class="rememberPW">
+                        <input type="checkbox" placeholder="Enter password" id="checkbox" name="checkbox">
+                        <label for="checkbox">Remember me</label>
+                    </div>
+                    <div class="forget_pw">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                </div>
+                <div class="newmenber">
+                    Not a member? <a href="#">Sign up now</a>
+                </div>
+                <div class="btn-login">
+                    <button type="submit">Signin</button>
+                </div>
+            </form>
         </div>
-        <form action="#" method="post">
-
-            <div class="input_form">
-                <input type="text" placeholder="Enter username" id="username" name="username">
-            </div>
-            <div class="input_form">
-                <input type="password" placeholder="Enter password" id="password" name="password">
-                <!-- <i class="fa fa-eye-slash" aria-hidden="true"></i> -->
-                <i class="fa fa-eye" aria-hidden="true"></i>
-            </div>
-
-            <div class="input_check">
-                <input type="checkbox" placeholder="Enter password" id="checkbox" name="checkbox">
-                <label for="checkbox">Remember me</label>
-            </div>
-            <div class="forget_pw">
-                <a href="#">Forgot Password?</a>
-            </div>
-            <div class="btn-login">
-                <button type="submit">Login</button>
-            </div>
-        </form>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -140,6 +155,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
